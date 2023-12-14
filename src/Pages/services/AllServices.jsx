@@ -5,14 +5,14 @@ import SearchBar from '../../Components/Global/SearchBar';
 import PaginationBar from '../../Components/Global/PaginationBar';
 
 const AllServices = () => {
-  const [servicesData, setServicesData] = useState([...ServicesData]);
+  // const [servicesData, setServicesData] = useState([...ServicesData]);
 
-  let handleDelete =(serviceId) =>{
-    const updatedData =servicesData.filter(service => service.id !== serviceId);
-    setServicesData(updatedData);
-    console.log("Deleted")
+  // let handleDelete =(serviceId) =>{
+  //   const updatedData =servicesData.filter(service => service.id !== serviceId);
+  //   setServicesData(updatedData);
+  //   console.log("Deleted")
   
-  }
+  // }
 
     return ( 
       <div className="container">
@@ -64,7 +64,8 @@ const AllServices = () => {
                <>
                <div className="col-9 text-left" >{service.action}</div>
                <div className='col-3 text-left'><a className="btn  text-decoration-none text-danger p-0" 
-               onClick={() => handleDelete(service.id)} key={service.id}>Delete</a></div>
+              //  onClick={() => handleDelete(service.id)} 
+              key={service.id}>Delete</a></div>
                </>
                }
            </div>

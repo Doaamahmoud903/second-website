@@ -5,12 +5,6 @@ import PaginationBar from '../../Components/Global/PaginationBar';
 import SearchBar from '../../Components/Global/SearchBar';
 
 const Paper = () => { 
-//   function showData(){
-//   CompanyData.map(p =>(
-//     console.log(p.id)
-//  )) };
-
-// showData();
 
   return ( 
   <div className="container">
